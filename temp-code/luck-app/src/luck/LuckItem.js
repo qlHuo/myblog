@@ -1,16 +1,16 @@
-import React,{Component} from 'react';
+import React, { Component } from 'react';
 import './LuckItem.css'
 
 class LuckItem extends Component {
-    constructor(props){
+    constructor(props) {
         super(props);
     }
 
-    render(){
-        let {luckItem} = this.props;
+    render () {
+        let { luckItem, choosedId } = this.props;
         return (
-            <div className="content-luck-item" key={luckItem.id}>
-                <img src={luckItem.imgUrl}  className="luck-img"/>
+            <div className={choosedId === luckItem.id ? 'content-luck-item choose-item' : 'content-luck-item'} key={luckItem.id}>
+                <img src={luckItem.imgUrl} className="luck-img" />
                 <div className="luck-title">{luckItem.title}</div>
             </div>
         )
