@@ -1,0 +1,25 @@
+.content-luck-item {
+  position: relative;
+  width: 120px;
+  margin: 5px;
+  border: 5px solid #fede8b;
+  border-radius: 5px;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+.content-luck-item .luck-img {
+  width: 100%;
+  vertical-align: middle;
+}
+.content-luck-item .luck-title {
+  width: 100%;
+  height: 20px;
+  line-height: 20px;
+  background: #fef0d1;
+  color: #a3651d;
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+  font-size: 12px;
+}
+/*# sourceMappingURL=LuckItem.css.map */
