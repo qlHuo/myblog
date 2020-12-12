@@ -1,0 +1,300 @@
+p img {
+ margin-top: 10px;
+ box-shadow: 0px 0px  10px 5px #ccc;
+}
+#cnblogs_post_body {
+    font-size: 16px;
+}
+#cnblogs_post_body h4, .blog_comment_body h4 {
+    font-size: 18px;
+}
+#cnblogs_post_body h3, .blog_comment_body h4 {
+    font-size: 20px;
+}
+#cnblogs_post_body h2, .blog_comment_body h4 {
+    font-size: 22px;
+}
+#cnblogs_post_body h1, .blog_comment_body h4 {
+    font-size: 24px;
+}
+#cnblogs_post_body h5, .blog_comment_body h4 {
+    font-size: 14px;
+}
+#cnblogs_post_body h6, .blog_comment_body h4 {
+    font-size: 12px;
+}
+
+pre {
+/*控制代码不换行*/
+    white-space: pre;
+    word-wrap: normal;
+}
+.cnblogs-markdown .hljs {
+font-family: sans-serif !important;
+    display: block;
+    overflow-x: auto;
+    padding: 0.5em;
+    background: #23241f !important;
+    color: #FFF;
+    font-size: 16px !important;
+    white-space: pre;
+    word-break: normal;
+}
+
+.hljs,
+.hljs-tag,
+.hljs-subst {
+  color: #f8f8f2;
+}
+
+.hljs-strong,
+.hljs-emphasis {
+  color: #a8a8a2;
+}
+
+.hljs-bullet,
+.hljs-quote,
+.hljs-number,
+.hljs-regexp,
+.hljs-literal,
+.hljs-link {
+  color: #ae81ff;
+}
+
+.hljs-code,
+.hljs-title,
+.hljs-section,
+.hljs-selector-class {
+  color: #a6e22e;
+}
+
+.hljs-strong {
+  font-weight: bold;
+}
+
+.hljs-emphasis {
+  font-style: italic;
+}
+
+.hljs-keyword,
+.hljs-selector-tag,
+.hljs-name,
+.hljs-attr {
+  color: #f92672;
+}
+
+.hljs-symbol,
+.hljs-attribute {
+  color: #66d9ef;
+}
+
+.hljs-params,
+.hljs-class .hljs-title {
+  color: #f8f8f2;
+}
+
+.hljs-string,
+.hljs-type,
+.hljs-built_in,
+.hljs-builtin-name,
+.hljs-selector-id,
+.hljs-selector-attr,
+.hljs-selector-pseudo,
+.hljs-addition,
+.hljs-variable,
+.hljs-template-variable {
+  color: #e6db74;
+}
+
+.hljs-comment,
+.hljs-deletion,
+.hljs-meta {
+  color: #75715e;
+}
+
+.cnblogs-markdown code, .cnblogs-post-body code {
+   border: none!important;
+   font-family: sans-serif !important;
+   color: #e92900;
+   background-color: #f8f8f8 !important;
+   margin: 0;
+   font-size: 16px !important;
+   border-radius: 5px!important;
+}
+
+.postBody blockquote {
+    border-left: 5px solid #42b983;
+    border-right: 0;
+    padding: 1rem .8rem .2rem .8rem;
+    color: #666;
+    background-image: none;
+    background-color: rgba(66,185,131,.1);
+    border-bottom: 0;
+    border-top: 0;
+}
+
+.postBody li, .postCon li {
+    margin-bottom: 0.5em;
+}
+#cnblogs_post_body p {
+    margin: 2px 2px 10px;
+}
+.postBody {
+  margin:10px 42px;
+}
+#topics, #comment_form_container {
+    background: #fff!important;
+    border-radius: 10px;
+   box-shadow: 0px 5px 8px 2px rgba(0,0,0,.2)!important;
+}
+.forFlow {
+  padding: 0 35px 10px;
+}
+#ad_t2, #cnblogs_c1, #under_post_kb {
+  display: none;
+}
+div.commentform textarea {
+  height: 80px;
+}
+#sidebar_news, #blog-calendar, #sidebar_search, .catListLink, .catListTag, .catListBlogRank, .catListPostCategory, .catListPostArchive, .catListView, .entrylistItem, #myposts, #under_post_news, #taglist_main {
+   border-radius: 10px;
+   box-shadow: 0px 6px 8px 2px rgba(0,0,0,0.5)!important;
+}
+#blog-calendar {
+  padding: 0 10px 10px;
+}
+#home,
+.postTitle a,
+#footer {
+  background-image: none;
+}
+
+body {
+background:url(https://area.sinaapp.com/bingImg/) top center no-repeat #000; 
+background-size: 100%;
+background-attachment:fixed;
+font-family: "微软雅黑",Helvetica,sans-serif;
+color: #2c3e50;
+}
+
+.day {
+  box-shadow: 0px 6px 8px 2px rgba(0,0,0,0.5)!important;
+  border: 1px solid transparent;
+  border-radius: 10px;
+}
+.day
+ {
+  background: rgba(255, 255, 255, .95) !important;
+}
+.dayTitle {
+  font-size: 150%;
+  line-height: 40px;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+.c_b_p_desc {
+  font-size: 115%;
+  color: #2c3e50;
+}
+
+#header {
+  position: relative;
+  height: 180px;
+}
+
+#blogTitle h1 {
+    width: auto!important;
+    font-size: 42px;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -25%);
+}
+
+#navList {
+    position: absolute;
+    top: -80px;
+    font-size: 18px;
+}
+#navList li {
+  margin-right: 22px;
+}
+#navList a {
+   width: auto !important;
+   color: #fff !important;
+}
+
+.blogStats {
+    color: #fff;
+    font-size: 14px;
+    right: 36px;
+    top: 100px;
+}
+
+#header h1 a {
+    color: #fafafa;
+}
+
+.vertical-middle>* {
+    color: #2c3e50;
+}
+
+#navList a:hover {
+    text-decoration: none;
+    color: #f60!important;
+}
+
+.entrylistPosttitle a {
+  background: none;
+}
+
+#myposts {
+  margin-left: 0;
+  background: #fff!important;
+}
+.PostListTitle {
+  margin-bottom: 20px;
+}
+.forFlow>.pager .Pager {
+  display: none;
+}
+#myposts .pager a {
+    border: 1px solid transparent;
+    background: #EEE;
+    border-radius: 3px;
+}
+#myposts {
+  padding-bottom: 6px;
+}
+
+.entrylistItem {
+  margin-bottom: 15px;
+}
+
+#under_post_news {
+  background: #fff;
+  font-size: 16px;
+  padding: 10px;
+}
+.recomm-block {
+  margin: 0;
+}
+
+#taglist_main {
+    background: #fff;
+    font-size: 16px;
+    padding: 20px;
+    margin: 0;
+}
+
+#blog-calendar .CalNextPrev a:link, #blog-calendar .CalNextPrev a:visited, #blog-calendar .CalNextPrev a:active, .CalTitle { 
+  background: none!important;
+}
+
+#topics, #comment_form_container {
+    background: rgb(255, 255, 255) !important;
+}
