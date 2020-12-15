@@ -195,7 +195,7 @@ const func1: (str: string) => number = (str) => {
 其他类型补充:
 
 ```typescript
-// data 类型
+// date 类型
 const date = new Date()
 
 interface Person {
@@ -256,7 +256,7 @@ TypeScript的核心之一就是类型检查。`interface` 和 `type` 都可以�
 
 **接口(interface)和类型别名(type alias)**
 
-* `interface` 可以定义一个函数或者对象，无法直接定义基础类型
+* `interface` 可以定义一个函数或者对象，**无法直接定义基础类型**
 * `type` 类型别名可以定义基础类型和对象类型
 * 在 TS 中如果能用 接口（`interface`）表示类型就用接口表示类型，否则使用`type`
 
@@ -393,7 +393,7 @@ console.log(per.name)
 **super 用法**
 
 * super(参数) 表示调用父类的 constructor
-* 如果父类的 constructor 不存在也需要调用 super() 否则报错
+* 如果父类的 constructor 不存在，也需要调用 super() 否则报错
 
 ```typescript
 class Person2 {
@@ -421,6 +421,7 @@ console.log(teacher2.age)
 class Person3 {
   constructor(private _name: string) {}
   get name() {
+      // 返回 私有属性
     return this._name
   }
   set name(name: string) {
@@ -441,7 +442,7 @@ console.log(per.name) // aurora132
 
 ```typescript
 // 单例模式 只能生成一个实例
-// static 将属性/方法直接挂载到 Demo 类上
+// static 将属性/方法直接挂载到 Demo 类上，而不是类的实例上
 class Demo {
   // 创建一个属性，它的类型为 Demo 并把它挂载到Demo类上
   private static instance: Demo
@@ -449,6 +450,7 @@ class Demo {
 
   static getInstance(name: string) {
     if (!Demo.instance) {
+      // 这里的 new Demo() 是在当前 Demo 这个类内的，因此可以创建实例
       Demo.instance = new Demo(name)
     }
     return Demo.instance
@@ -460,6 +462,8 @@ const demo1 = Demo.getInstance('ql')
 console.log(demo) // Demo { name: 'aurora' }
 console.log(demo1) // Demo { name: 'aurora' }
 ```
+
+> static 表示将属性或者方法挂载到 类 上，而不是类的实例上。
 
 #### readonly 和 抽象类
 
