@@ -1,0 +1,3 @@
+
+----tradeCardNative142行----增加
+actions.printElecface = true;
